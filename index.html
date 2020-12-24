@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.w3-main #services p {
+	font-size: 24px;
+}
+.w3-main #designers p {
+	font-size: 24px;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Company<br>Name</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">自我介紹</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">生活習慣</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">求學經歷</a> 
+    <a href="works.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">工作經驗</a> 
+    <a href="future.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">未來期許</a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">連絡我</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+<a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>宋冠呈 90711227</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>正修科技大學</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>資管三乙.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+    <img src="IMG/1200px-Csu.svg.png" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks"></div>
+    <span class="w3-half"><img src="IMG/下載.jpg" style="width:100%" onClick="onClick(this)" alt="Light, white and tight scandinavian design"></span>
+    <div class="w3-half"></div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:50px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>自我介紹.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>我是正修科技大學夜校的學生,白天上班,晚上上課<br>
+    目前22歲,家住在三民區</p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>生活習慣.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>每天早上六點起床,七點準時到公司上班,中午休息一個小時,下午五點下班<br>
+    目前周休二日,假日無聊時會去圖書館讀書進修自己</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="file:///C|/Users/user/Desktop/IMG/如何讀書-讀書方法-閱讀方法-考試技巧-教學.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>讀書</h3>
+          <p>讀書有許許多多的好處，可以增廣見聞、也可從書中獲得許多寶貴的啟示。如果我們遇到難題，我們就可以用我們的知識和經驗來迎刃而解這些問題。          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="IMG/18434.png" alt="Jane" height="305" style="width:100%">
+        <div class="w3-container">
+          <h3>運動</h3>
+          <ul>
+            <li>增強心肺功能</li>
+            <li>增加肌肉的柔韌度，減低受傷機會</li>
+            <li>促進新陳代謝，消耗熱能，防止脂肪積聚</li>
+            <li>可減低患上心臟病、高血壓、糖尿病等疾病</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="file:///C|/Users/user/Desktop/IMG/d463880.jpg" alt="Mike" height="304" style="width:100%">
+        <div class="w3-container">
+          <h3>上網</h3>
+          <p>上網可增加知識或提高文化水平；使用編程網站，可以訓練我們的邏輯思維；看新聞，則可以使我們增廣見聞。</p>
+          <p class="w3-opacity">&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top: 75px; font-size: 24px;">
+    <h1 class="w3-xxxlarge w3-text-red"><b>求學過程.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>國小一、二年級讀高雄市立光武國小、三年級轉學至陽明國小<br>
+    </p>
+    <p>國中就讀家裡附近的民族國中,參加第一屆國中教育會考,最終選擇就讀道明高級中學,</p>
+    <p>高中參加學科能力測驗,透過免試升學進入到台北的中國文化大學,</p>
+    <p>在台北半年後決定休學回高雄,在隔年報名正修科技大學,目前夜校大學三年級</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>聯絡我.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>想認識我，或多了解我，請傳送電子郵件給我</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>姓名</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>信箱</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>訊息</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">送出訊息</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
